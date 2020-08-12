@@ -202,6 +202,10 @@ std::string Client::generate_url(const std::string &bucket, const std::string &o
     return _impl->generate_url(req, expire_seconds);
 }
 
+int Client::build_http_request(BceRequest &request, HttpRequest *http_request) {
+    return _impl->build_http_request(request, http_request);
+}
+
 int Client::download_file(
         const std::string &bucket_name,
         const std::string &object_name,

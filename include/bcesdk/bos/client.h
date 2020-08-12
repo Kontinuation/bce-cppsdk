@@ -161,6 +161,8 @@ public:
     std::string generate_url(const std::string &bucket, const std::string &object,
             int expire_seconds = 1800);
 
+    int build_http_request(BceRequest &request, HttpRequest *http_request);
+
     int download_file(
             const std::string &bucket_name,
             const std::string &object_name,
