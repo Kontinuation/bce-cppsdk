@@ -25,6 +25,7 @@ set(MAIN_SRCS
   src/bos/model/upload_request.cpp
   src/bos/request/complete_multipart_upload_request.cpp
   src/bos/request/object_request.cpp
+  src/bos/request/delete_multiple_objects_request.cpp
   src/bos/response/append_object_response.cpp
   src/bos/response/complete_multipart_upload_response.cpp
   src/bos/response/copy_object_response.cpp
@@ -37,6 +38,7 @@ set(MAIN_SRCS
   src/bos/response/list_multipart_uploads_response.cpp
   src/bos/response/list_objects_response.cpp
   src/bos/response/list_parts_response.cpp
+  src/bos/response/delete_multiple_objects_response.cpp
   src/http/http_client.cpp
   src/http/http_request.cpp
   src/http/http_response.cpp

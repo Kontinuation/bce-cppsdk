@@ -322,7 +322,7 @@ std::string StringUtil::url_encode(const std::string &src, bool encode_slash) {
     std::ostringstream ss;
     for (size_t i = 0; i < src.size(); ++i) {
         char c = src[i];
-        if ((c >= -1 && c <= 255 && isalnum(c)) || c == '_' || c == '-' || c == '~' || c == '.'
+        if ((c >= -1 && isalnum(c)) || c == '_' || c == '-' || c == '~' || c == '.'
                 || (c == '/' && !encode_slash)) {
             ss << c;
         } else {

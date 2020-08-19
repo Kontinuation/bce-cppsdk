@@ -24,6 +24,12 @@ public:
         _source_bucket_name = bucket;
         _source_object_name = object;
     }
+    const std::string &source_bucket_name() const {
+        return _source_bucket_name;
+    }
+    const std::string &source_object_name() const {
+        return _source_object_name;
+    }
     void set_source_bucket_name(const std::string &name) {
         _source_bucket_name = name;
     }

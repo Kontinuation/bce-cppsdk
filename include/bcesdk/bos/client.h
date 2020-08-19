@@ -32,6 +32,7 @@
 #include "bcesdk/bos/request/complete_multipart_upload_request.h"
 #include "bcesdk/bos/request/copy_object_request.h"
 #include "bcesdk/bos/request/delete_object_request.h"
+#include "bcesdk/bos/request/delete_multiple_objects_request.h"
 #include "bcesdk/bos/request/get_object_request.h"
 #include "bcesdk/bos/request/head_object_request.h"
 #include "bcesdk/bos/request/init_multi_upload_request.h"
@@ -47,6 +48,7 @@
 #include "bcesdk/bos/response/complete_multipart_upload_response.h"
 #include "bcesdk/bos/response/copy_object_response.h"
 #include "bcesdk/bos/response/delete_object_response.h"
+#include "bcesdk/bos/response/delete_multiple_objects_response.h"
 #include "bcesdk/bos/response/get_object_response.h"
 #include "bcesdk/bos/response/head_object_response.h"
 #include "bcesdk/bos/response/init_multi_upload_response.h"
@@ -113,6 +115,7 @@ public:
     int put_object(PutObjectRequest &request, PutObjectResponse *result) const;
     int get_object(GetObjectRequest &request, GetObjectResponse *result) const;
     int delete_object(DeleteObjectRequest &request, DeleteObjectResponse *result) const;
+    int delete_multiple_objects(DeleteMultipleObjectsRequest &request, DeleteMultipleObjectsResponse *result) const;
     int copy_object(CopyObjectRequest &request, CopyObjectResponse *result) const;
     int append_object(AppendObjectRequest &request, AppendObjectResponse *result) const;
     int restore_object(RestoreObjectRequest &request, RestoreObjectResponse *result) const;

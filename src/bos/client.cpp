@@ -65,6 +65,10 @@ int Client::delete_object(DeleteObjectRequest &request, DeleteObjectResponse *re
     return _impl->send_request(request, result);
 }
 
+int Client::delete_multiple_objects(DeleteMultipleObjectsRequest &request, DeleteMultipleObjectsResponse *result) const {
+    return _impl->send_request(request, result);
+}
+
 int Client::head_object(HeadObjectRequest &request, HeadObjectResponse *result) const {
     return _impl->send_request(request, result);
 }
